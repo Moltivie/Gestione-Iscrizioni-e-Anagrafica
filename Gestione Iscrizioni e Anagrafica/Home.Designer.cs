@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.bunifuDragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.panelDragControl = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelHome = new System.Windows.Forms.Panel();
@@ -44,15 +46,15 @@
             this.btnEventi = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panelDragControl = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.btnReduceIconsClone = new Bunifu.Framework.UI.BunifuImageButton();
+            this.panelDragControl.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             this.panelHome.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReduceIcons)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
-            this.panelDragControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReduceIconsClone)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl
@@ -61,6 +63,28 @@
             this.bunifuDragControl.Horizontal = true;
             this.bunifuDragControl.TargetControl = this.panelDragControl;
             this.bunifuDragControl.Vertical = true;
+            // 
+            // panelDragControl
+            // 
+            this.panelDragControl.BackColor = System.Drawing.Color.Transparent;
+            this.panelDragControl.Controls.Add(this.lblTitle);
+            this.panelDragControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDragControl.Location = new System.Drawing.Point(0, 0);
+            this.panelDragControl.Name = "panelDragControl";
+            this.panelDragControl.Size = new System.Drawing.Size(685, 32);
+            this.panelDragControl.TabIndex = 9;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTitle.Location = new System.Drawing.Point(8, 9);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(202, 17);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Gestione Iscrizioni e Anagrafiche";
             // 
             // bunifuElipse
             // 
@@ -81,9 +105,10 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(65)))), ((int)(((byte)(154)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Black;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(913, 555);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(685, 451);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
             // panelHome
@@ -91,9 +116,10 @@
             this.panelHome.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panelHome.Controls.Add(this.lblCopyright);
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHome.Location = new System.Drawing.Point(229, 39);
+            this.panelHome.Location = new System.Drawing.Point(172, 32);
+            this.panelHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(684, 516);
+            this.panelHome.Size = new System.Drawing.Size(513, 419);
             this.panelHome.TabIndex = 12;
             // 
             // lblCopyright
@@ -103,10 +129,9 @@
             this.lblCopyright.BackColor = System.Drawing.Color.Transparent;
             this.lblCopyright.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCopyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblCopyright.Location = new System.Drawing.Point(539, 489);
-            this.lblCopyright.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCopyright.Location = new System.Drawing.Point(404, 397);
             this.lblCopyright.Name = "lblCopyright";
-            this.lblCopyright.Size = new System.Drawing.Size(132, 19);
+            this.lblCopyright.Size = new System.Drawing.Size(103, 16);
             this.lblCopyright.TabIndex = 10;
             this.lblCopyright.Text = "© 2018 Aiman, Inc";
             // 
@@ -114,6 +139,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.Transparent;
             this.panelMenu.Controls.Add(this.pictureBoxLogo);
+            this.panelMenu.Controls.Add(this.btnReduceIconsClone);
             this.panelMenu.Controls.Add(this.btnReduceIcons);
             this.panelMenu.Controls.Add(this.btnEsci);
             this.panelMenu.Controls.Add(this.btnAnagrafiche);
@@ -121,9 +147,10 @@
             this.panelMenu.Controls.Add(this.btnEventi);
             this.panelMenu.Controls.Add(this.btnDashboard);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 39);
+            this.panelMenu.Location = new System.Drawing.Point(0, 32);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(229, 516);
+            this.panelMenu.Size = new System.Drawing.Size(172, 419);
             this.panelMenu.TabIndex = 11;
             // 
             // pictureBoxLogo
@@ -132,9 +159,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxLogo.Image = global::Gestione_Iscrizioni_e_Anagrafica.Properties.Resources.logo;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(25, 15);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(15, 5);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(127, 80);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(95, 65);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLogo.TabIndex = 2;
             this.pictureBoxLogo.TabStop = false;
@@ -146,9 +174,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReduceIcons.Image = global::Gestione_Iscrizioni_e_Anagrafica.Properties.Resources.pngHamburgerMenu;
             this.btnReduceIcons.ImageActive = null;
-            this.btnReduceIcons.Location = new System.Drawing.Point(176, 15);
+            this.btnReduceIcons.Location = new System.Drawing.Point(132, 12);
+            this.btnReduceIcons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReduceIcons.Name = "btnReduceIcons";
-            this.btnReduceIcons.Size = new System.Drawing.Size(49, 33);
+            this.btnReduceIcons.Size = new System.Drawing.Size(37, 27);
             this.btnReduceIcons.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnReduceIcons.TabIndex = 1;
             this.btnReduceIcons.TabStop = false;
@@ -180,19 +209,20 @@
             this.btnEsci.IconVisible = true;
             this.btnEsci.IconZoom = 35D;
             this.btnEsci.IsTab = false;
-            this.btnEsci.Location = new System.Drawing.Point(0, 447);
-            this.btnEsci.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEsci.Location = new System.Drawing.Point(0, 363);
+            this.btnEsci.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEsci.Name = "btnEsci";
             this.btnEsci.Normalcolor = System.Drawing.Color.Transparent;
             this.btnEsci.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnEsci.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEsci.selected = false;
-            this.btnEsci.Size = new System.Drawing.Size(229, 67);
+            this.btnEsci.Size = new System.Drawing.Size(172, 54);
             this.btnEsci.TabIndex = 0;
             this.btnEsci.Text = "Esci";
             this.btnEsci.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEsci.Textcolor = System.Drawing.Color.White;
             this.btnEsci.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEsci.Click += new System.EventHandler(this.btnEsci_Click);
             // 
             // btnAnagrafiche
             // 
@@ -219,14 +249,14 @@
             this.btnAnagrafiche.IconVisible = true;
             this.btnAnagrafiche.IconZoom = 35D;
             this.btnAnagrafiche.IsTab = false;
-            this.btnAnagrafiche.Location = new System.Drawing.Point(0, 248);
-            this.btnAnagrafiche.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAnagrafiche.Location = new System.Drawing.Point(0, 202);
+            this.btnAnagrafiche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAnagrafiche.Name = "btnAnagrafiche";
             this.btnAnagrafiche.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAnagrafiche.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnAnagrafiche.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAnagrafiche.selected = false;
-            this.btnAnagrafiche.Size = new System.Drawing.Size(229, 67);
+            this.btnAnagrafiche.Size = new System.Drawing.Size(172, 54);
             this.btnAnagrafiche.TabIndex = 0;
             this.btnAnagrafiche.Text = "Anagrafiche";
             this.btnAnagrafiche.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -258,14 +288,14 @@
             this.btnImpostazioni.IconVisible = true;
             this.btnImpostazioni.IconZoom = 35D;
             this.btnImpostazioni.IsTab = false;
-            this.btnImpostazioni.Location = new System.Drawing.Point(0, 314);
-            this.btnImpostazioni.Margin = new System.Windows.Forms.Padding(5);
+            this.btnImpostazioni.Location = new System.Drawing.Point(0, 255);
+            this.btnImpostazioni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnImpostazioni.Name = "btnImpostazioni";
             this.btnImpostazioni.Normalcolor = System.Drawing.Color.Transparent;
             this.btnImpostazioni.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnImpostazioni.OnHoverTextColor = System.Drawing.Color.White;
             this.btnImpostazioni.selected = false;
-            this.btnImpostazioni.Size = new System.Drawing.Size(229, 67);
+            this.btnImpostazioni.Size = new System.Drawing.Size(172, 54);
             this.btnImpostazioni.TabIndex = 0;
             this.btnImpostazioni.Text = "Impostazioni";
             this.btnImpostazioni.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -297,14 +327,14 @@
             this.btnEventi.IconVisible = true;
             this.btnEventi.IconZoom = 35D;
             this.btnEventi.IsTab = false;
-            this.btnEventi.Location = new System.Drawing.Point(0, 182);
-            this.btnEventi.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEventi.Location = new System.Drawing.Point(0, 148);
+            this.btnEventi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEventi.Name = "btnEventi";
             this.btnEventi.Normalcolor = System.Drawing.Color.Transparent;
             this.btnEventi.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnEventi.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEventi.selected = false;
-            this.btnEventi.Size = new System.Drawing.Size(229, 67);
+            this.btnEventi.Size = new System.Drawing.Size(172, 54);
             this.btnEventi.TabIndex = 0;
             this.btnEventi.Text = "Eventi";
             this.btnEventi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -336,14 +366,14 @@
             this.btnDashboard.IconVisible = true;
             this.btnDashboard.IconZoom = 35D;
             this.btnDashboard.IsTab = false;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 116);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(5);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 94);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Normalcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnDashboard.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDashboard.selected = false;
-            this.btnDashboard.Size = new System.Drawing.Size(229, 67);
+            this.btnDashboard.Size = new System.Drawing.Size(172, 54);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -356,48 +386,43 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(862, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Location = new System.Drawing.Point(646, 0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(51, 39);
+            this.btnClose.Size = new System.Drawing.Size(38, 32);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 3;
             this.btnClose.TabStop = false;
             this.btnClose.Zoom = 10;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // panelDragControl
+            // btnReduceIconsClone
             // 
-            this.panelDragControl.BackColor = System.Drawing.Color.Transparent;
-            this.panelDragControl.Controls.Add(this.lblTitle);
-            this.panelDragControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDragControl.Location = new System.Drawing.Point(0, 0);
-            this.panelDragControl.Margin = new System.Windows.Forms.Padding(4);
-            this.panelDragControl.Name = "panelDragControl";
-            this.panelDragControl.Size = new System.Drawing.Size(913, 39);
-            this.panelDragControl.TabIndex = 9;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTitle.Location = new System.Drawing.Point(11, 11);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(249, 20);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Gestione Iscrizioni e Anagrafiche";
+            this.btnReduceIconsClone.Image = global::Gestione_Iscrizioni_e_Anagrafica.Properties.Resources.pngHamburgerMenu;
+            this.btnReduceIconsClone.ImageActive = null;
+            this.btnReduceIconsClone.Location = new System.Drawing.Point(15, 12);
+            this.btnReduceIconsClone.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReduceIconsClone.Name = "btnReduceIconsClone";
+            this.btnReduceIconsClone.Size = new System.Drawing.Size(26, 27);
+            this.btnReduceIconsClone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnReduceIconsClone.TabIndex = 1;
+            this.btnReduceIconsClone.TabStop = false;
+            this.btnReduceIconsClone.Visible = false;
+            this.btnReduceIconsClone.Zoom = 10;
+            this.btnReduceIconsClone.Click += new System.EventHandler(this.btnReduceIcons_Click);
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 555);
+            this.ClientSize = new System.Drawing.Size(685, 451);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Home";
             this.Text = "Home";
+            this.panelDragControl.ResumeLayout(false);
+            this.panelDragControl.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.panelHome.ResumeLayout(false);
             this.panelHome.PerformLayout();
@@ -405,8 +430,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReduceIcons)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            this.panelDragControl.ResumeLayout(false);
-            this.panelDragControl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReduceIconsClone)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,5 +453,6 @@
         private System.Windows.Forms.Label lblTitle;
         private Bunifu.Framework.UI.BunifuImageButton btnReduceIcons;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private Bunifu.Framework.UI.BunifuImageButton btnReduceIconsClone;
     }
 }
