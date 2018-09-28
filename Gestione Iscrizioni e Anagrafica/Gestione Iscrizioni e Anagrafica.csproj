@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ApplicationIcon>LogoIco.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.4">
@@ -119,6 +119,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <Content Include="LogoIco.ico" />
+    <None Include="Resources\LogoIco.ico" />
+    <None Include="Resources\icons8-punto-interrogativo-24.png" />
+    <None Include="Resources\icons8-punto-interrogativo-48.png" />
     <None Include="Resources\logo.png" />
     <None Include="Resources\icons8-menu-48.png" />
     <None Include="Resources\icons8-uscita-48.png" />

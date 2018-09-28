@@ -14,6 +14,7 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
 
         public Home() {
             InitializeComponent();
+            panelLayout.Height = btnDashboard.Height;
         }
 
         private void btnClose_Click(object sender, EventArgs e) {
@@ -38,6 +39,26 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
 
         private void btnEsci_Click(object sender, EventArgs e) {
             Application.Exit();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e) {
+            panelLayout.Height = btnDashboard.Height;
+            panelLayout.Top = btnDashboard.Top;
+        }
+
+        private void btnEventi_Click(object sender, EventArgs e) {
+            panelLayout.Height = btnEventi.Height;
+            panelLayout.Top = btnEventi.Top;
+        }
+
+        private void btnAnagrafiche_Click(object sender, EventArgs e) {
+            panelLayout.Height = btnAnagrafiche.Height;
+            panelLayout.Top = btnAnagrafiche.Top;
+        }
+
+        private void btnImpostazioni_Click(object sender, EventArgs e) {
+            panelLayout.Height = btnImpostazioni.Height;
+            panelLayout.Top = btnImpostazioni.Top;
         }
     }
 }

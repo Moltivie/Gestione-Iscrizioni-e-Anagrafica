@@ -26,19 +26,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.DragControllogin = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.panelDragControl = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblCopyright = new System.Windows.Forms.Label();
             this.textboxPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.textboxUsername = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblLog = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblAccess = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBoxLoginPng = new System.Windows.Forms.PictureBox();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.panelDragControl = new System.Windows.Forms.Panel();
-            this.lblLog = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuGradientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoginPng)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -50,6 +50,14 @@
             this.DragControllogin.Horizontal = true;
             this.DragControllogin.TargetControl = this.panelDragControl;
             this.DragControllogin.Vertical = true;
+            // 
+            // panelDragControl
+            // 
+            this.panelDragControl.BackColor = System.Drawing.Color.Transparent;
+            this.panelDragControl.Location = new System.Drawing.Point(0, 0);
+            this.panelDragControl.Name = "panelDragControl";
+            this.panelDragControl.Size = new System.Drawing.Size(347, 37);
+            this.panelDragControl.TabIndex = 8;
             // 
             // bunifuGradientPanel
             // 
@@ -170,6 +178,17 @@
             this.bunifuCustomLabel2.TabIndex = 4;
             this.bunifuCustomLabel2.Text = "Password";
             // 
+            // lblLog
+            // 
+            this.lblLog.AutoSize = true;
+            this.lblLog.BackColor = System.Drawing.Color.Transparent;
+            this.lblLog.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLog.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblLog.Location = new System.Drawing.Point(49, 514);
+            this.lblLog.Name = "lblLog";
+            this.lblLog.Size = new System.Drawing.Size(0, 20);
+            this.lblLog.TabIndex = 4;
+            // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
@@ -224,25 +243,6 @@
             // 
             this.bunifuElipse.ElipseRadius = 20;
             this.bunifuElipse.TargetControl = this;
-            // 
-            // panelDragControl
-            // 
-            this.panelDragControl.BackColor = System.Drawing.Color.Transparent;
-            this.panelDragControl.Location = new System.Drawing.Point(0, 0);
-            this.panelDragControl.Name = "panelDragControl";
-            this.panelDragControl.Size = new System.Drawing.Size(347, 37);
-            this.panelDragControl.TabIndex = 8;
-            // 
-            // lblLog
-            // 
-            this.lblLog.AutoSize = true;
-            this.lblLog.BackColor = System.Drawing.Color.Transparent;
-            this.lblLog.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLog.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLog.Location = new System.Drawing.Point(49, 514);
-            this.lblLog.Name = "lblLog";
-            this.lblLog.Size = new System.Drawing.Size(0, 20);
-            this.lblLog.TabIndex = 4;
             // 
             // Login
             // 
