@@ -27,6 +27,7 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
             if (panelMenu.Size.Width == 172) {
                 panelMenu.Size = new Size(57, panelMenu.Height);
                 btnReduceIconsClone.Visible = true;
+                pictureBoxLogo.Hide();
             }
             else if (panelMenu.Size.Width == 57) {
                 btnReduceIconsClone.Visible = false;
