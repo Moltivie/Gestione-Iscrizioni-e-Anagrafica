@@ -1,0 +1,433 @@
+﻿namespace Gestione_Iscrizioni_e_Anagrafica
+{
+    partial class Home
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            this.bunifuDragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelHome = new System.Windows.Forms.Panel();
+            this.lblCopyright = new System.Windows.Forms.Label();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.btnReduceIcons = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnEsci = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAnagrafiche = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnImpostazioni = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnEventi = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.panelDragControl = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.bunifuGradientPanel1.SuspendLayout();
+            this.panelHome.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReduceIcons)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            this.panelDragControl.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // bunifuDragControl
+            // 
+            this.bunifuDragControl.Fixed = true;
+            this.bunifuDragControl.Horizontal = true;
+            this.bunifuDragControl.TargetControl = this.panelDragControl;
+            this.bunifuDragControl.Vertical = true;
+            // 
+            // bunifuElipse
+            // 
+            this.bunifuElipse.ElipseRadius = 20;
+            this.bunifuElipse.TargetControl = this;
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.panelHome);
+            this.bunifuGradientPanel1.Controls.Add(this.panelMenu);
+            this.bunifuGradientPanel1.Controls.Add(this.btnClose);
+            this.bunifuGradientPanel1.Controls.Add(this.panelDragControl);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(177)))), ((int)(((byte)(231)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(31)))), ((int)(((byte)(141)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(65)))), ((int)(((byte)(154)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Black;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(913, 555);
+            this.bunifuGradientPanel1.TabIndex = 0;
+            // 
+            // panelHome
+            // 
+            this.panelHome.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelHome.Controls.Add(this.lblCopyright);
+            this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHome.Location = new System.Drawing.Point(229, 39);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.Size = new System.Drawing.Size(684, 516);
+            this.panelHome.TabIndex = 12;
+            // 
+            // lblCopyright
+            // 
+            this.lblCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCopyright.AutoSize = true;
+            this.lblCopyright.BackColor = System.Drawing.Color.Transparent;
+            this.lblCopyright.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCopyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblCopyright.Location = new System.Drawing.Point(539, 489);
+            this.lblCopyright.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCopyright.Name = "lblCopyright";
+            this.lblCopyright.Size = new System.Drawing.Size(132, 19);
+            this.lblCopyright.TabIndex = 10;
+            this.lblCopyright.Text = "© 2018 Aiman, Inc";
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.Color.Transparent;
+            this.panelMenu.Controls.Add(this.pictureBoxLogo);
+            this.panelMenu.Controls.Add(this.btnReduceIcons);
+            this.panelMenu.Controls.Add(this.btnEsci);
+            this.panelMenu.Controls.Add(this.btnAnagrafiche);
+            this.panelMenu.Controls.Add(this.btnImpostazioni);
+            this.panelMenu.Controls.Add(this.btnEventi);
+            this.panelMenu.Controls.Add(this.btnDashboard);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 39);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(229, 516);
+            this.panelMenu.TabIndex = 11;
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxLogo.Image = global::Gestione_Iscrizioni_e_Anagrafica.Properties.Resources.logo;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(25, 15);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(127, 80);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 2;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // btnReduceIcons
+            // 
+            this.btnReduceIcons.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReduceIcons.Image = global::Gestione_Iscrizioni_e_Anagrafica.Properties.Resources.pngHamburgerMenu;
+            this.btnReduceIcons.ImageActive = null;
+            this.btnReduceIcons.Location = new System.Drawing.Point(176, 15);
+            this.btnReduceIcons.Name = "btnReduceIcons";
+            this.btnReduceIcons.Size = new System.Drawing.Size(49, 33);
+            this.btnReduceIcons.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnReduceIcons.TabIndex = 1;
+            this.btnReduceIcons.TabStop = false;
+            this.btnReduceIcons.Zoom = 10;
+            this.btnReduceIcons.Click += new System.EventHandler(this.btnReduceIcons_Click);
+            // 
+            // btnEsci
+            // 
+            this.btnEsci.Active = false;
+            this.btnEsci.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEsci.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEsci.BackColor = System.Drawing.Color.Transparent;
+            this.btnEsci.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEsci.BorderRadius = 0;
+            this.btnEsci.ButtonText = "Esci";
+            this.btnEsci.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEsci.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEsci.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEsci.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnEsci.Iconimage = global::Gestione_Iscrizioni_e_Anagrafica.Properties.Resources.pngUscita;
+            this.btnEsci.Iconimage_right = null;
+            this.btnEsci.Iconimage_right_Selected = null;
+            this.btnEsci.Iconimage_Selected = null;
+            this.btnEsci.IconMarginLeft = 0;
+            this.btnEsci.IconMarginRight = 0;
+            this.btnEsci.IconRightVisible = true;
+            this.btnEsci.IconRightZoom = 0D;
+            this.btnEsci.IconVisible = true;
+            this.btnEsci.IconZoom = 35D;
+            this.btnEsci.IsTab = false;
+            this.btnEsci.Location = new System.Drawing.Point(0, 447);
+            this.btnEsci.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEsci.Name = "btnEsci";
+            this.btnEsci.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnEsci.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnEsci.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnEsci.selected = false;
+            this.btnEsci.Size = new System.Drawing.Size(229, 67);
+            this.btnEsci.TabIndex = 0;
+            this.btnEsci.Text = "Esci";
+            this.btnEsci.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEsci.Textcolor = System.Drawing.Color.White;
+            this.btnEsci.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnAnagrafiche
+            // 
+            this.btnAnagrafiche.Active = false;
+            this.btnAnagrafiche.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAnagrafiche.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAnagrafiche.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnagrafiche.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAnagrafiche.BorderRadius = 0;
+            this.btnAnagrafiche.ButtonText = "Anagrafiche";
+            this.btnAnagrafiche.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnagrafiche.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAnagrafiche.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnagrafiche.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAnagrafiche.Iconimage = global::Gestione_Iscrizioni_e_Anagrafica.Properties.Resources.pngAnagrafica;
+            this.btnAnagrafiche.Iconimage_right = null;
+            this.btnAnagrafiche.Iconimage_right_Selected = null;
+            this.btnAnagrafiche.Iconimage_Selected = null;
+            this.btnAnagrafiche.IconMarginLeft = 0;
+            this.btnAnagrafiche.IconMarginRight = 0;
+            this.btnAnagrafiche.IconRightVisible = true;
+            this.btnAnagrafiche.IconRightZoom = 0D;
+            this.btnAnagrafiche.IconVisible = true;
+            this.btnAnagrafiche.IconZoom = 35D;
+            this.btnAnagrafiche.IsTab = false;
+            this.btnAnagrafiche.Location = new System.Drawing.Point(0, 248);
+            this.btnAnagrafiche.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAnagrafiche.Name = "btnAnagrafiche";
+            this.btnAnagrafiche.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnAnagrafiche.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnAnagrafiche.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAnagrafiche.selected = false;
+            this.btnAnagrafiche.Size = new System.Drawing.Size(229, 67);
+            this.btnAnagrafiche.TabIndex = 0;
+            this.btnAnagrafiche.Text = "Anagrafiche";
+            this.btnAnagrafiche.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAnagrafiche.Textcolor = System.Drawing.Color.White;
+            this.btnAnagrafiche.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnImpostazioni
+            // 
+            this.btnImpostazioni.Active = false;
+            this.btnImpostazioni.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnImpostazioni.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnImpostazioni.BackColor = System.Drawing.Color.Transparent;
+            this.btnImpostazioni.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnImpostazioni.BorderRadius = 0;
+            this.btnImpostazioni.ButtonText = "Impostazioni";
+            this.btnImpostazioni.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImpostazioni.DisabledColor = System.Drawing.Color.Gray;
+            this.btnImpostazioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImpostazioni.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnImpostazioni.Iconimage = global::Gestione_Iscrizioni_e_Anagrafica.Properties.Resources.pngImpostazioni;
+            this.btnImpostazioni.Iconimage_right = null;
+            this.btnImpostazioni.Iconimage_right_Selected = null;
+            this.btnImpostazioni.Iconimage_Selected = null;
+            this.btnImpostazioni.IconMarginLeft = 0;
+            this.btnImpostazioni.IconMarginRight = 0;
+            this.btnImpostazioni.IconRightVisible = true;
+            this.btnImpostazioni.IconRightZoom = 0D;
+            this.btnImpostazioni.IconVisible = true;
+            this.btnImpostazioni.IconZoom = 35D;
+            this.btnImpostazioni.IsTab = false;
+            this.btnImpostazioni.Location = new System.Drawing.Point(0, 314);
+            this.btnImpostazioni.Margin = new System.Windows.Forms.Padding(5);
+            this.btnImpostazioni.Name = "btnImpostazioni";
+            this.btnImpostazioni.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnImpostazioni.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnImpostazioni.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnImpostazioni.selected = false;
+            this.btnImpostazioni.Size = new System.Drawing.Size(229, 67);
+            this.btnImpostazioni.TabIndex = 0;
+            this.btnImpostazioni.Text = "Impostazioni";
+            this.btnImpostazioni.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnImpostazioni.Textcolor = System.Drawing.Color.White;
+            this.btnImpostazioni.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnEventi
+            // 
+            this.btnEventi.Active = false;
+            this.btnEventi.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEventi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEventi.BackColor = System.Drawing.Color.Transparent;
+            this.btnEventi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEventi.BorderRadius = 0;
+            this.btnEventi.ButtonText = "Eventi";
+            this.btnEventi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEventi.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEventi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventi.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnEventi.Iconimage = global::Gestione_Iscrizioni_e_Anagrafica.Properties.Resources.pngEventi;
+            this.btnEventi.Iconimage_right = null;
+            this.btnEventi.Iconimage_right_Selected = null;
+            this.btnEventi.Iconimage_Selected = null;
+            this.btnEventi.IconMarginLeft = 0;
+            this.btnEventi.IconMarginRight = 0;
+            this.btnEventi.IconRightVisible = true;
+            this.btnEventi.IconRightZoom = 0D;
+            this.btnEventi.IconVisible = true;
+            this.btnEventi.IconZoom = 35D;
+            this.btnEventi.IsTab = false;
+            this.btnEventi.Location = new System.Drawing.Point(0, 182);
+            this.btnEventi.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEventi.Name = "btnEventi";
+            this.btnEventi.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnEventi.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnEventi.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnEventi.selected = false;
+            this.btnEventi.Size = new System.Drawing.Size(229, 67);
+            this.btnEventi.TabIndex = 0;
+            this.btnEventi.Text = "Eventi";
+            this.btnEventi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEventi.Textcolor = System.Drawing.Color.White;
+            this.btnEventi.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Active = false;
+            this.btnDashboard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDashboard.BorderRadius = 0;
+            this.btnDashboard.ButtonText = "Dashboard";
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnDashboard.Iconimage = global::Gestione_Iscrizioni_e_Anagrafica.Properties.Resources.pngHome;
+            this.btnDashboard.Iconimage_right = null;
+            this.btnDashboard.Iconimage_right_Selected = null;
+            this.btnDashboard.Iconimage_Selected = null;
+            this.btnDashboard.IconMarginLeft = 0;
+            this.btnDashboard.IconMarginRight = 0;
+            this.btnDashboard.IconRightVisible = true;
+            this.btnDashboard.IconRightZoom = 0D;
+            this.btnDashboard.IconVisible = true;
+            this.btnDashboard.IconZoom = 35D;
+            this.btnDashboard.IsTab = false;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 116);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(5);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnDashboard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnDashboard.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnDashboard.selected = false;
+            this.btnDashboard.Size = new System.Drawing.Size(229, 67);
+            this.btnDashboard.TabIndex = 0;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDashboard.Textcolor = System.Drawing.Color.White;
+            this.btnDashboard.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageActive = null;
+            this.btnClose.Location = new System.Drawing.Point(862, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(51, 39);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 3;
+            this.btnClose.TabStop = false;
+            this.btnClose.Zoom = 10;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // panelDragControl
+            // 
+            this.panelDragControl.BackColor = System.Drawing.Color.Transparent;
+            this.panelDragControl.Controls.Add(this.lblTitle);
+            this.panelDragControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDragControl.Location = new System.Drawing.Point(0, 0);
+            this.panelDragControl.Margin = new System.Windows.Forms.Padding(4);
+            this.panelDragControl.Name = "panelDragControl";
+            this.panelDragControl.Size = new System.Drawing.Size(913, 39);
+            this.panelDragControl.TabIndex = 9;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTitle.Location = new System.Drawing.Point(11, 11);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(249, 20);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Gestione Iscrizioni e Anagrafiche";
+            // 
+            // Home
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(913, 555);
+            this.Controls.Add(this.bunifuGradientPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Home";
+            this.Text = "Home";
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.panelHome.ResumeLayout(false);
+            this.panelHome.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReduceIcons)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            this.panelDragControl.ResumeLayout(false);
+            this.panelDragControl.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private Bunifu.Framework.UI.BunifuImageButton btnClose;
+        private System.Windows.Forms.Panel panelDragControl;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse;
+        private System.Windows.Forms.Label lblCopyright;
+        private System.Windows.Forms.Panel panelMenu;
+        private Bunifu.Framework.UI.BunifuFlatButton btnDashboard;
+        private Bunifu.Framework.UI.BunifuFlatButton btnEsci;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAnagrafiche;
+        private Bunifu.Framework.UI.BunifuFlatButton btnImpostazioni;
+        private Bunifu.Framework.UI.BunifuFlatButton btnEventi;
+        private System.Windows.Forms.Panel panelHome;
+        private System.Windows.Forms.Label lblTitle;
+        private Bunifu.Framework.UI.BunifuImageButton btnReduceIcons;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+    }
+}
