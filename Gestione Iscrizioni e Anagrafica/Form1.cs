@@ -16,17 +16,16 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
             InitializeComponent();
         }
 
-        Home home = new Home();
+        // Define new window
+        private Home home = new Home();
 
+        // Login
         private void bunifuThinButton21_Click(object sender, EventArgs e) {
-            if (textboxUsername.Text == "" && textboxPassword.Text == "")
-            {
+            if (textboxUsername.Text == "" && textboxPassword.Text == "") {
                 this.Hide();
                 home.Show();
             }
-               
-            else
-            {
+            else {
                 lblLog.ForeColor = Color.Red;
                 lblLog.Text = "Le credenziali sono errate. Riprova.";
             }
@@ -34,6 +33,11 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
 
         private void btnClose_Click(object sender, EventArgs e) {
             Application.Exit();
+        }
+
+        // Forgot Password
+        private void lblForgetPassword_Click(object sender, EventArgs e) {
+
         }
     }
 }

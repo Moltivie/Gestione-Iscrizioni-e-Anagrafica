@@ -43,21 +43,25 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
         }
 
         private void btnDashboard_Click(object sender, EventArgs e) {
+            // Lateral Panel Movement
             panelLayout.Height = btnDashboard.Height;
             panelLayout.Top = btnDashboard.Top;
         }
 
         private void btnEventi_Click(object sender, EventArgs e) {
+            // Lateral Panel Movement
             panelLayout.Height = btnEventi.Height;
             panelLayout.Top = btnEventi.Top;
         }
 
         private void btnAnagrafiche_Click(object sender, EventArgs e) {
+            // Lateral Panel Movement
             panelLayout.Height = btnAnagrafiche.Height;
             panelLayout.Top = btnAnagrafiche.Top;
         }
 
         private void btnImpostazioni_Click(object sender, EventArgs e) {
+            // Lateral Panel Movement
             panelLayout.Height = btnImpostazioni.Height;
             panelLayout.Top = btnImpostazioni.Top;
         }

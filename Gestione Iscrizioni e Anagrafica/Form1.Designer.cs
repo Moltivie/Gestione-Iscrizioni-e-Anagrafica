@@ -39,6 +39,7 @@
             this.pictureBoxLoginPng = new System.Windows.Forms.PictureBox();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.lblForgetPassword = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuGradientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoginPng)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -68,6 +69,7 @@
             this.bunifuGradientPanel.Controls.Add(this.lblCopyright);
             this.bunifuGradientPanel.Controls.Add(this.textboxPassword);
             this.bunifuGradientPanel.Controls.Add(this.textboxUsername);
+            this.bunifuGradientPanel.Controls.Add(this.lblForgetPassword);
             this.bunifuGradientPanel.Controls.Add(this.bunifuCustomLabel2);
             this.bunifuGradientPanel.Controls.Add(this.lblLog);
             this.bunifuGradientPanel.Controls.Add(this.bunifuCustomLabel1);
@@ -92,7 +94,7 @@
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Silver;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Accedi";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -244,6 +246,19 @@
             this.bunifuElipse.ElipseRadius = 20;
             this.bunifuElipse.TargetControl = this;
             // 
+            // lblForgetPassword
+            // 
+            this.lblForgetPassword.AutoSize = true;
+            this.lblForgetPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblForgetPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblForgetPassword.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblForgetPassword.Location = new System.Drawing.Point(118, 514);
+            this.lblForgetPassword.Name = "lblForgetPassword";
+            this.lblForgetPassword.Size = new System.Drawing.Size(136, 16);
+            this.lblForgetPassword.TabIndex = 4;
+            this.lblForgetPassword.Text = "Password dimenticata?";
+            this.lblForgetPassword.Click += new System.EventHandler(this.lblForgetPassword_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +293,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.Panel panelDragControl;
         private Bunifu.Framework.UI.BunifuCustomLabel lblLog;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblForgetPassword;
     }
 }
 
