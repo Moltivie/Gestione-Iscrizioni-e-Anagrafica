@@ -40,6 +40,7 @@
             this.pictureBoxLoginPng = new System.Windows.Forms.PictureBox();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.bunifuGradientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoginPng)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -64,6 +65,7 @@
             // 
             this.bunifuGradientPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel.BackgroundImage")));
             this.bunifuGradientPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel.Controls.Add(this.button1);
             this.bunifuGradientPanel.Controls.Add(this.panelDragControl);
             this.bunifuGradientPanel.Controls.Add(this.bunifuThinButton21);
             this.bunifuGradientPanel.Controls.Add(this.lblCopyright);
@@ -263,6 +265,16 @@
             this.bunifuElipse.ElipseRadius = 20;
             this.bunifuElipse.TargetControl = this;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(203, 185);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "GetHashOfPassword";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,8 +308,9 @@
         private System.Windows.Forms.Label lblCopyright;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.Panel panelDragControl;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblLog;
         private Bunifu.Framework.UI.BunifuCustomLabel lblForgetPassword;
+        private System.Windows.Forms.Button button1;
+        public Bunifu.Framework.UI.BunifuCustomLabel lblLog;
     }
 }
 
