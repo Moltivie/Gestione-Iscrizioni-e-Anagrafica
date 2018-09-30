@@ -32,6 +32,7 @@
             this.lblCopyright = new System.Windows.Forms.Label();
             this.textboxPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.textboxUsername = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.lblForgetPassword = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblLog = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -39,7 +40,6 @@
             this.pictureBoxLoginPng = new System.Windows.Forms.PictureBox();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.lblForgetPassword = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuGradientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoginPng)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -86,30 +86,34 @@
             this.bunifuGradientPanel.Quality = 10;
             this.bunifuGradientPanel.Size = new System.Drawing.Size(389, 585);
             this.bunifuGradientPanel.TabIndex = 2;
+            this.bunifuGradientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel_Paint);
             // 
             // bunifuThinButton21
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 2;
             this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Accedi";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.Silver;
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.IdleBorderThickness = 2;
             this.bunifuThinButton21.IdleCornerRadius = 20;
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Silver;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Silver;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(102, 454);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(102, 431);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(161, 40);
-            this.bunifuThinButton21.TabIndex = 7;
+            this.bunifuThinButton21.TabIndex = 2;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
@@ -138,12 +142,12 @@
             this.textboxPassword.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.textboxPassword.isPassword = true;
-            this.textboxPassword.Location = new System.Drawing.Point(46, 376);
+            this.textboxPassword.Location = new System.Drawing.Point(46, 354);
             this.textboxPassword.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.textboxPassword.MaxLength = 32767;
             this.textboxPassword.Name = "textboxPassword";
             this.textboxPassword.Size = new System.Drawing.Size(282, 36);
-            this.textboxPassword.TabIndex = 5;
+            this.textboxPassword.TabIndex = 1;
             this.textboxPassword.Tag = "";
             this.textboxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -159,14 +163,27 @@
             this.textboxUsername.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.textboxUsername.isPassword = false;
-            this.textboxUsername.Location = new System.Drawing.Point(46, 265);
+            this.textboxUsername.Location = new System.Drawing.Point(46, 243);
             this.textboxUsername.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.textboxUsername.MaxLength = 32767;
             this.textboxUsername.Name = "textboxUsername";
             this.textboxUsername.Size = new System.Drawing.Size(282, 36);
-            this.textboxUsername.TabIndex = 5;
+            this.textboxUsername.TabIndex = 0;
             this.textboxUsername.Tag = "";
             this.textboxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // lblForgetPassword
+            // 
+            this.lblForgetPassword.AutoSize = true;
+            this.lblForgetPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblForgetPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblForgetPassword.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblForgetPassword.Location = new System.Drawing.Point(118, 491);
+            this.lblForgetPassword.Name = "lblForgetPassword";
+            this.lblForgetPassword.Size = new System.Drawing.Size(136, 16);
+            this.lblForgetPassword.TabIndex = 3;
+            this.lblForgetPassword.Text = "Password dimenticata?";
+            this.lblForgetPassword.Click += new System.EventHandler(this.lblForgetPassword_Click);
             // 
             // bunifuCustomLabel2
             // 
@@ -174,7 +191,7 @@
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.SystemColors.Control;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(42, 337);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(42, 315);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(95, 22);
             this.bunifuCustomLabel2.TabIndex = 4;
@@ -186,7 +203,7 @@
             this.lblLog.BackColor = System.Drawing.Color.Transparent;
             this.lblLog.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLog.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLog.Location = new System.Drawing.Point(49, 514);
+            this.lblLog.Location = new System.Drawing.Point(81, 529);
             this.lblLog.Name = "lblLog";
             this.lblLog.Size = new System.Drawing.Size(0, 20);
             this.lblLog.TabIndex = 4;
@@ -197,7 +214,7 @@
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.Control;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(42, 227);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(42, 205);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(101, 22);
             this.bunifuCustomLabel1.TabIndex = 4;
@@ -245,19 +262,6 @@
             // 
             this.bunifuElipse.ElipseRadius = 20;
             this.bunifuElipse.TargetControl = this;
-            // 
-            // lblForgetPassword
-            // 
-            this.lblForgetPassword.AutoSize = true;
-            this.lblForgetPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblForgetPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblForgetPassword.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblForgetPassword.Location = new System.Drawing.Point(118, 514);
-            this.lblForgetPassword.Name = "lblForgetPassword";
-            this.lblForgetPassword.Size = new System.Drawing.Size(136, 16);
-            this.lblForgetPassword.TabIndex = 4;
-            this.lblForgetPassword.Text = "Password dimenticata?";
-            this.lblForgetPassword.Click += new System.EventHandler(this.lblForgetPassword_Click);
             // 
             // Login
             // 
