@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.OleDb;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Gestione_Iscrizioni_e_Anagrafica {
 
     internal class ConnectionFunc {
-        public static string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\database.mdb";
+        public static string connString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\database.mdb";
 
         #region GlobalVariablesDatabase
 
@@ -49,5 +45,32 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
         }
 
         #endregion TryLogin
+
+        #region ResetPassword
+
+        public static void ResetPassword(string new_password, Bunifu.Framework.UI.BunifuCustomLabel label) {
+            //string query = "update logins set password='" + Crypter.Encrypt(new_password) + "' where username=admin";
+            string query = "UPDATE logins SET [password]='" + Crypter.Encrypt(new_password) + "' WHERE username='admin'";
+            cmd.CommandType = System.Data.CommandType.Text;
+
+            cmd = new OleDbCommand(query, con);
+            con.Open();
+            try {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message, "Errore");
+                label.Text = "Errore! Password non modificata.";
+                label.ForeColor = Color.Red;
+            }
+            finally {
+                label.Text = "Password modificata! Accedere con la nuova password.";
+                label.ForeColor = Color.Green;
+            }
+
+            con.Close();
+        }
+
+        #endregion ResetPassword
     }
 }

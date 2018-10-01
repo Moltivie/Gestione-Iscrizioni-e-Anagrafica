@@ -37,6 +37,8 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
 
         // Forgot Password
         private void lblForgetPassword_Click(object sender, EventArgs e) {
+            new PasswordForget().Show();
+            this.Hide();
         }
 
         private void bunifuGradientPanel_Paint(object sender, PaintEventArgs e) {
@@ -44,7 +46,7 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            Console.WriteLine(Crypter.Encrypt(textboxPassword.Text));
+            Console.WriteLine(Crypter.Decrypt(textboxUsername.Text));
         }
     }
 }
