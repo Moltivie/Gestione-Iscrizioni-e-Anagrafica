@@ -44,9 +44,5 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
         private void bunifuGradientPanel_Paint(object sender, PaintEventArgs e) {
             // NULL DO NOT DELETE
         }
-
-        private void button1_Click(object sender, EventArgs e) {
-            Console.WriteLine(Crypter.Decrypt(textboxUsername.Text));
-        }
     }
 }

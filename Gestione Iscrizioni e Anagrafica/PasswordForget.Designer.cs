@@ -103,7 +103,7 @@
             this.lblLog.BackColor = System.Drawing.Color.Transparent;
             this.lblLog.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLog.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLog.Location = new System.Drawing.Point(82, 474);
+            this.lblLog.Location = new System.Drawing.Point(50, 474);
             this.lblLog.Name = "lblLog";
             this.lblLog.Size = new System.Drawing.Size(0, 20);
             this.lblLog.TabIndex = 17;
