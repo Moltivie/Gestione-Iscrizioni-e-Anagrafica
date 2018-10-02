@@ -101,7 +101,6 @@
             this.btnAbout.TabIndex = 3;
             this.btnAbout.TabStop = false;
             this.btnAbout.Zoom = 10;
-            this.btnAbout.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // bunifuElipse
             // 

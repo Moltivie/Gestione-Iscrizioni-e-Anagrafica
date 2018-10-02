@@ -64,7 +64,7 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
                 label.ForeColor = Color.Red;
             }
             finally {
-                label.Text = "Password modificata! Accedere con la nuova password.";
+                label.Text = "Password modificata, Accedere!";
                 label.ForeColor = Color.Green;
             }
 

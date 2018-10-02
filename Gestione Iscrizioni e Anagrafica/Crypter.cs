@@ -8,7 +8,7 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
     internal class Crypter {
 
         public static string Encrypt(string encryptString) {
-            string EncryptionKey = "pQiyBGk)ToQeNEn$KVVW%KczqH)eydpSCTO";  //we can change the code converstion key as per our requirement
+            string EncryptionKey = "pQiyBGk)ToQeNEn$KVVW%KczqH)eydpSCTO";
             byte[] clearBytes = Encoding.Unicode.GetBytes(encryptString);
             using (Aes encryptor = Aes.Create()) {
                 Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, new byte[] {
@@ -28,7 +28,7 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
         }
 
         public static string Decrypt(string cipherText) {
-            string EncryptionKey = "pQiyBGk)ToQeNEn$KVVW%KczqH)eydpSCTO";  //we can change the code converstion key as per our requirement, but the decryption key should be same as encryption key
+            string EncryptionKey = "pQiyBGk)ToQeNEn$KVVW%KczqH)eydpSCTO";
             cipherText = cipherText.Replace(" ", "+");
             byte[] cipherBytes = Convert.FromBase64String(cipherText);
             using (Aes encryptor = Aes.Create()) {
