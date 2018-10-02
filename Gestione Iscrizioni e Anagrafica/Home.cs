@@ -59,5 +59,12 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
             panelLayout.Height = btnImpostazioni.Height;
             panelLayout.Top = btnImpostazioni.Top;
         }
+
+        private void btnMaximize_Click(object sender, EventArgs e) {
+            if (this.WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
     }
 }

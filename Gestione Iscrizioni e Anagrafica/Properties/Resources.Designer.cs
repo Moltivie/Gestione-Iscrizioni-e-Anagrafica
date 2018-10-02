@@ -113,6 +113,16 @@ namespace Gestione_Iscrizioni_e_Anagrafica.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngGuida {
+            get {
+                object obj = ResourceManager.GetObject("pngGuida", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngHamburgerMenu {
             get {
                 object obj = ResourceManager.GetObject("pngHamburgerMenu", resourceCulture);
@@ -136,6 +146,16 @@ namespace Gestione_Iscrizioni_e_Anagrafica.Properties {
         internal static System.Drawing.Bitmap pngImpostazioni {
             get {
                 object obj = ResourceManager.GetObject("pngImpostazioni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngMaximize {
+            get {
+                object obj = ResourceManager.GetObject("pngMaximize", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

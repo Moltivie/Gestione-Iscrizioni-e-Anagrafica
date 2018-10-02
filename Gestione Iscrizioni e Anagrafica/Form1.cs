@@ -41,8 +41,16 @@ namespace Gestione_Iscrizioni_e_Anagrafica {
             this.Hide();
         }
 
-        private void bunifuGradientPanel_Paint(object sender, PaintEventArgs e) {
-            // NULL DO NOT DELETE
+        private void textboxUsername_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                bunifuThinButton21_Click(this, new EventArgs());
+            }
+        }
+
+        private void textboxPassword_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                bunifuThinButton21_Click(this, new EventArgs());
+            }
         }
     }
 }

@@ -91,7 +91,6 @@
             this.bunifuGradientPanel.Quality = 10;
             this.bunifuGradientPanel.Size = new System.Drawing.Size(389, 585);
             this.bunifuGradientPanel.TabIndex = 2;
-            this.bunifuGradientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel_Paint);
             // 
             // bunifuThinButton21
             // 
@@ -153,6 +152,7 @@
             this.textboxPassword.TabIndex = 1;
             this.textboxPassword.Tag = "";
             this.textboxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textboxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textboxPassword_KeyDown);
             // 
             // textboxUsername
             // 
@@ -174,6 +174,7 @@
             this.textboxUsername.TabIndex = 0;
             this.textboxUsername.Tag = "";
             this.textboxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textboxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textboxUsername_KeyDown);
             // 
             // lblForgetPassword
             // 

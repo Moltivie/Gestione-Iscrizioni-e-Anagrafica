@@ -131,6 +131,9 @@
   <ItemGroup>
     <Content Include="icon.ico" />
     <Content Include="LogoIco.ico" />
+    <None Include="Resources\icons8_Help_50px.png" />
+    <None Include="Resources\1954538-48.png" />
+    <None Include="Resources\icons8_Maximize_Window_64px.png" />
     <None Include="Resources\LogoIco.ico" />
     <None Include="Resources\icons8-punto-interrogativo-24.png" />
     <None Include="Resources\icons8-punto-interrogativo-48.png" />
